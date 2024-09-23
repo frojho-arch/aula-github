@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Race 2000 Ultra</title>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        body:hover .ely img, body:hover .galeno img, body:hover .jon img {
+            left: 300px;
+        }
+
+        .ely img {
+            position: relative;
+            left: 0px;
+            transition: all 2s linear;
+        }
+
+        .galeno img {
+            position: relative;
+            left: 0px;
+            transition: all 2s ease;
+        }
+
+        .jon img {
+            position: relative;
+            left: 0px;
+            transition: all 2s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="ely">
+        <img src="1-ely.png" alt="" style="width: 200px;">
+    </div>
+
+    <div class="galeno">
+        <img src="2-galeno.png" alt="" style="width: 200px;">
+    </div>
+
+    <div class="jon">
+        <img src="3-jon.png" alt="" style="width: 200px;">
+    </div>
+    
+</body>
+</html>
